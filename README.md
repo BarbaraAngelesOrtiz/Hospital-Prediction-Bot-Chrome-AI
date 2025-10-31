@@ -5,6 +5,8 @@ It includes an integrated AI assistant capable of answering natural language que
 
 The CSV datasets used for historical and forecast analysis come from the project [Predictive Model of Health Deterioration in Hospitalized Patients in Spain](https://github.com/BarbaraAngelesOrtiz/Proyecto-Predicci-n-hospitalaria)
 
+[Demo Video](https://youtu.be/jQM90Y5Fpbg)
+
 ----
 
 ## 🚀 Key Features
