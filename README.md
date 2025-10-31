@@ -55,6 +55,9 @@ You can type natural language questions like the following:
 | **summarizer**                      | Returns a sample summary of occupancy trends                                              |
 | **translator**                      | Simulates a translation output with current occupancy data                                |
 
+Note: 
+- hospital_data contains data from 2022-01-01 to 2025-05-31
+- predictions contains data from 2025-06-01 to 2025-12-31
 
 If the question doesn’t match any known pattern, the bot will respond:
 
