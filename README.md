@@ -9,19 +9,21 @@ The CSV datasets used for historical and forecast analysis come from the project
 
 ## 🚀 Key Features
 
-✅ Load and analyze historical hospital data (hospital_data.csv)
+✅ Interactive Data Analysis: Load and explore hospital occupancy data from hospital_data.csv.
 
-✅ Optional upload of forecast data (predicciones.csv)
+✅ Optional Forecast Upload: Add prediction data from predicciones.csv for trend analysis.
 
-✅ Automatic calculation of averages by hospital or province
+✅ Automatic Calculations: Compute average ward occupancy by hospital and by province.
 
-✅ Detection of the day with the highest occupancy
+✅ Occupancy Insights: Identify hospitals or provinces with the highest or lowest average occupancy.
 
-✅ Identification of trends in forecast data
+✅ Forecast Trends: Detect whether predicted occupancy is increasing, decreasing, or stable.
 
-✅ Query for tomorrow’s forecast or the highest predicted value
+✅ Date-Based Queries: Retrieve real and predicted occupancy data for any specific date (YYYY-MM-DD).
 
-✅ Chat-like interface with natural language interaction
+✅ Natural Language Bot: Chat-like interface that understands plain English questions (e.g., “average beds”, “next day prediction trend”).
+
+✅ Fallback Assistance: When unsure, the bot suggests helpful example questions to guide the user.
 
 ----
 
@@ -29,47 +31,61 @@ The CSV datasets used for historical and forecast analysis come from the project
 
 You can type natural language questions like the following:
 
-| 🧠 Example Question                       | 📊 What It Does                                               |
-| ----------------------------------------- | ------------------------------------------------------------- |
-| What is the overall average occupancy?    | Calculates the average occupancy across all records           |
-| Which hospital has the highest occupancy? | Returns the hospital with the highest average bed use         |
-| What is the highest recorded occupancy?   | Shows the maximum occupancy value and date                    |
-| Average by hospital                       | Lists the average occupancy per hospital                      |
-| Average by province                       | Lists the average occupancy per province                      |
-| What’s the forecast for tomorrow?         | Displays the predicted bed occupancy for the next day         |
-| What is the trend of the forecasts?       | Analyzes if the forecast values are increasing or decreasing  |
-| Compare prediction vs. current occupancy  | Shows the difference between forecasted and current occupancy |
-| Give me a summary                         | Provides a brief overview of occupancy and forecast trends    |
-| 2025-09-15                                | Returns the data for a specific date if found in the dataset  |
+| 🧠 Example Question                 | 📊 What It Does                                                                           |
+| ----------------------------------- | ----------------------------------------------------------------------------------------- |
+| **average beds**                    | Calculates the average number of occupied ward beds across all data                       |
+| **most occupied hospital**          | Finds the hospital with the highest average ward occupancy                                |
+| **hospital with lowest occupancy**  | Finds the hospital with the lowest average ward occupancy                                 |
+| **province with highest occupancy** | Returns the province with the highest average ward occupancy                              |
+| **next day prediction trend**       | Analyzes if the predicted occupancy for the next day is increasing, decreasing, or stable |
+| **2025-09-15**                      | Returns the real and predicted occupancy data for that specific date (if available)       |
+| **prompt**                          | Simulates a structured output API response                                                |
+| **summarizer**                      | Returns a sample summary of occupancy trends                                              |
+| **translator**                      | Simulates a translation output with current occupancy data                                |
 
 
 If the question doesn’t match any known pattern, the bot will respond:
 
-🤖 "Not sure how to answer that. Try including a date (YYYY-MM-DD) or month (YYYY-MM)."
+🤖 Sorry, I didn’t understand your question.
+Try asking:
+
+“average beds”
+
+“most occupied hospital”
+
+“hospital with lowest occupancy”
+
+“province with highest occupancy”
+
+“next day prediction trend”
+
+a date (YYYY-MM-DD)
 
 ----
 
-## 📊 Example Outputs
-
+📊 Example Outputs
 Example 1 – General overview
 
-🏥 Average occupancy across hospitals: 421.7 beds
+📊 Average occupied ward beds (total): 329.22
 
-📈 Forecast trend: increasing (+7.3%)
+Example 2 – Most occupied hospital
 
-Example 2 – Specific date query
+🏥 Most occupied hospital: Saint Mary’s Hospital (458.11 beds)
+
+Example 3 – Date query
 
 📅 Date: 2025-09-15
+🏥 Real data – Occupied beds total: 476
+📈 Predicted beds available total: 495
 
-🏥 Occupancy: 476 beds
+Example 4 – Prediction trend
 
-🔮 Predicted occupancy: 495 beds (+4.0% increase)
+📆 Next day prediction trend: increasing 📈
 
-Example 3 – Forecast summary
+Example 5 – Fallback response
 
-🔮 Highest predicted occupancy: 501.01 beds (2025-10-16)
-
-📉 Trend detected: slight decrease after mid-October
+🤖 Sorry, I didn’t understand your question.
+Try asking one of the suggested phrases above.
 
 ----
 
