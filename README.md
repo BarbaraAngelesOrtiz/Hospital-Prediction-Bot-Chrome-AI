@@ -46,6 +46,7 @@ You can type natural language questions like the following:
 If the question doesn’t match any known pattern, the bot will respond:
 
 🤖 "Not sure how to answer that. Try including a date (YYYY-MM-DD) or month (YYYY-MM)."
+
 ----
 
 ## 📊 Example Outputs
