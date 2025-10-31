@@ -9,23 +9,33 @@ The CSV datasets used for historical and forecast analysis come from the project
 
 ## 🚀 Key Features
 
-✅ Interactive Data Analysis: Load and explore hospital occupancy data from hospital_data.csv.
-
-✅ Optional Forecast Upload: Add prediction data from predicciones.csv for trend analysis.
-
-✅ Automatic Calculations: Compute average ward occupancy by hospital and by province.
-
-✅ Occupancy Insights: Identify hospitals or provinces with the highest or lowest average occupancy.
-
-✅ Forecast Trends: Detect whether predicted occupancy is increasing, decreasing, or stable.
-
-✅ Date-Based Queries: Retrieve real and predicted occupancy data for any specific date (YYYY-MM-DD).
-
-✅ Natural Language Bot: Chat-like interface that understands plain English questions (e.g., “average beds”, “next day prediction trend”).
-
-✅ Fallback Assistance: When unsure, the bot suggests helpful example questions to guide the user.
+- Load real hospital occupancy data (hospital_data.csv) and optional forecast data (predictions.csv).
+- Calculate averages by hospital and province automatically.
+- Identify the most and least occupied hospitals and provinces.
+- Detect daily and predicted trends in occupancy levels.
+- Provide an interactive chat-style interface for natural language queries.
+- Simulated integration with Chrome’s built-in AI models through mock APIs.
 
 ----
+
+## 🧩 APIs Simulated
+
+Although this version uses simulated AI outputs, it is built to emulate future integration with:
+
+- Prompt API → for structured data responses.
+- Summarizer API → to generate short summaries of occupancy trends.
+- Translator API → to translate key metrics into other languages.
+
+Each of these APIs is represented in the bot’s logic as a simulated output that demonstrates how the real APIs would behave once connected.
+
+----
+
+🎯 Problem Addressed
+
+Hospitals generate large amounts of occupancy data daily, making it difficult to interpret trends and anticipate bed demand.
+This project proposes a lightweight Chrome Extension that turns CSV datasets into accessible insights, bridging data analysis and conversational AI for healthcare management.
+
+---
 
 ## 💬 Example Questions the Bot Can Answer
 
@@ -140,6 +150,12 @@ git clone https://github.com/BarbaraAngelesOrtiz/Prediccion-Hospitalaria-ChromeA
 6. Upload the CSV files
 
 7. Ask a question in natural language (e.g., “Which hospital has the highest occupancy?”)
+
+----
+
+💡 Next Steps
+
+Future iterations will connect the current simulation layer to Chrome’s Gemini Nano and related APIs for real AI-driven summarization, forecasting, and translation.
 
 ----
 
