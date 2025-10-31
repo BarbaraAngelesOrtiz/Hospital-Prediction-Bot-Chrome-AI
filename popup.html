@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>📊 Hospital Data Analysis</h2>
+
+  <label>Load hospital data CSV:</label>
+  <input type="file" id="fileHospital" accept=".csv" />
+
+  <label>Load predictions CSV:</label>
+  <input type="file" id="filePredictions" accept=".csv" />
+
+  <button id="analyzeBtn">Analyze Hospital Data</button>
+  <div id="output"></div>
+
+  <hr/>
+
+  <h2>🤖 Hospital Bot</h2>
+  <input type="text" id="botInput" placeholder="Ask a question or enter a date (YYYY-MM-DD)" />
+  <button id="botBtn">Ask Bot</button>
+  <div id="botOutput"></div>
+
+  <h3>Quick Questions</h3>
+  <div id="quickQuestions">
+    <button class="quick-btn">average beds</button>
+    <button class="quick-btn">most occupied hospital</button>
+    <button class="quick-btn">hospital with lowest occupancy</button>
+    <button class="quick-btn">province with highest occupancy</button>
+    <button class="quick-btn">next day prediction trend</button>
+    <button class="quick-btn">Prompt API</button>
+    <button class="quick-btn">Summarizer API</button>
+    <button class="quick-btn">Translator API</button>
+  </div>
+
+    <script src="papaparse.min.js"></script>
+    <script src="popup.js"></script>
+
+</body>
+</html>
+
