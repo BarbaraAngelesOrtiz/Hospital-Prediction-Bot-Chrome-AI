@@ -162,7 +162,7 @@ git clone https://github.com/BarbaraAngelesOrtiz/Prediccion-Hospitalaria-ChromeA
 
 Future iterations will connect the current simulation layer to Chrome’s Gemini Nano and related APIs for real AI-driven summarization, forecasting, and translation.
 
-----
+-----
 
 ## Author
 **Bárbara Ángeles Ortiz**
